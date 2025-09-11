@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌦 Weather Now</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🌍 Weather Now</h1>
+
+    <!-- Search -->
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="🔎 Search city...">
+      <button id="searchBtn">Get Weather</button>
+    </div>
+
+    <!-- Weather Card -->
+    <div id="weatherCard" class="weather-card hidden">
+      <h2 id="cityName"></h2>
+      <p id="date"></p>
+
+      <div class="weather-main">
+        <img id="weatherIcon" src="" alt="Weather Icon">
+        <div class="temp-box">
+          <h3 id="temperature"></h3>
+          <p id="description"></p>
+        </div>
+      </div>
+
+      <div class="details">
+        <div class="detail-item">
+          <span>💧 Humidity</span>
+          <p><span id="humidity"></span>%</p>
+        </div>
+        <div class="detail-item">
+          <span>🌬 Wind</span>
+          <p><span id="wind"></span> km/h</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Error -->
+    <p id="error" class="error hidden">⚠️ City not found. Try again!</p>
+  </div>
+
+  <footer>
+    <p>Made with ❤️ by Aishu</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
